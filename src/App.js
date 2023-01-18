@@ -32,10 +32,7 @@ function App() {
 
   React.useEffect(() => {
     axios({
-      url: "https://api.baserow.io/api/database/rows/table/121195/?user_field_names=true",
-      headers: {
-        Authorization: "Token 6hZhot0bqaECqGrmaiJSFHWj4kfhoFgr"
-      }
+      url: "/api/baserow/database/rows/table/121195/?user_field_names=true",
     }).then((response) => {
       setPost(response.data);
     });
